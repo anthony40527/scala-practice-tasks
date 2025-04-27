@@ -7,7 +7,7 @@ Task1 object SortList :-
   
   Original List:
   List(4, 1, 7, 3)
-  Ascending Order:  
+  Ascending Order:
   List(1, 3, 4, 7) 
   Descending Order: 
   List(7, 4, 3, 1)
