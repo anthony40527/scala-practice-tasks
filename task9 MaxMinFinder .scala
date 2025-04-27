@@ -8,11 +8,11 @@ object MaxMinFinder {
   }
 
   def findMinMax(lst: List[Int]): (Int, Int) = {
-    // Initialize the first element as both min and max
+   
     var min = lst.head
     var max = lst.head
     
-    // Iterate through the list and update min and max values
+    
     for (num <- lst.tail) {
       if (num < min) min = num
       if (num > max) max = num
