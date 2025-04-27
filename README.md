@@ -1,7 +1,7 @@
 # scala-practice-tasks
 This repository contains a collection of beginner-friendly Scala programs that cover common programming tasks and logic-building problems. Each task is written in a simple and understandable way, ideal for learning Scala syntax and functional programming basics.
 
-task1 object SortList :-
+Task1 object SortList :-
 
  output:-
   
@@ -17,7 +17,7 @@ task1 object SortList :-
   
   List(7, 4, 3, 1)
 
-task2  FibonacciSequence :-
+Task2  FibonacciSequence :-
 
 output:-
   First 10 Fibonacci numbers:
