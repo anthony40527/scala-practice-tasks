@@ -8,10 +8,10 @@ object LongestWordsFinder {
   }
 
   def findLongestWords(sentence: String): List[String] = {
-    val words = sentence.split("\\s+").toList // Split sentence into words
+    val words = sentence.split("\\s+").toList 
     val sortedWords =
-      words.sortBy(-_.length) // Sort words by length in descending order
-    val top3Words = sortedWords.take(3) // Take top 3 longest words
+      words.sortBy(-_.length) 
+    val top3Words = sortedWords.take(3) 
 
     top3Words
   }
