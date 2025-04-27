@@ -8,11 +8,13 @@ object WordFrequencyCounter {
   }
 
   def getTop5Words(text: String): List[(String, Int)] = {
-    val words = text.toLowerCase.replaceAll("[^a-zA-Z0-9\\s]", "").split("\\s+")
-    
-    val wordCount = words.groupBy(identity).view.mapValues(_.length).toList
-    val sortedWords = wordCount.sortBy { case (word, count) => (-count, word) }
-
-    sortedWords.take(5)
+    text.toLowerCase.replaceAll("[^a-zA-Z0-9\\s]", "")
+      .split("\\s+")
+      .groupBy(identity)
+      .mapValues(_.length)
+      .toList
+      .sortBy { case (word, count) => (-count, word) }
+      .take(5)
   }
 }
+
