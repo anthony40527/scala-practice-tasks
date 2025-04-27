@@ -8,14 +8,14 @@ object VowelConsonantCounter {
   }
 
   def countVowelsAndConsonants(text: String): (Int, Int) = {
-    // Define vowels (both uppercase and lowercase)
+    
     val vowels = "aeiouAEIOU"
     
-    // Initialize counters for vowels and consonants
+   
     var vowelCount = 0
     var consonantCount = 0
     
-    // Loop through each character in the string
+    
     for (char <- text) {
       if (char.isLetter) {
         if (vowels.contains(char)) {
@@ -26,7 +26,7 @@ object VowelConsonantCounter {
       }
     }
 
-    // Return the counts as a tuple
+   
     (vowelCount, consonantCount)
   }
 }
