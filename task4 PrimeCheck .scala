@@ -11,8 +11,7 @@ object PrimeCheck {
   def main(args: Array[String]): Unit = {
     println("Enter a number to check if it is prime:")
 
-    val number = readInt() // User-லிருந்து number வாங்கறோம்
-
+    val number = readInt() 
     if (isPrime(number))
       println(s"$number is a prime number.")
     else
