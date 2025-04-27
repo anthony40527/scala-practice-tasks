@@ -4,6 +4,7 @@ This repository contains a collection of beginner-friendly Scala programs that c
 task1 object SortList :-
 
  output:-
+  
   Original List:
   
   List(4, 1, 7, 3)
