@@ -1,20 +1,15 @@
 object PrimeCheck {
   def isPrime(n: Int): Boolean = {
-    if (n <= 1) false
-    else {
-      var i = 2
-      while (i <= math.sqrt(n).toInt) {
-        if (n % i == 0) return false
-        i += 1
-      }
-      true
+    if (n <= 1) return false
+    for (i <- 2 until n) { 
+      if (n % i == 0) return false 
     }
+    true 
   }
 
   def main(args: Array[String]): Unit = {
-    val number = 29// You can change this number to test
-    val result = isPrime(number)
-    if (result)
+    val number = 29 
+    if (isPrime(number))
       println(s"$number is a prime number.")
     else
       println(s"$number is not a prime number.")
