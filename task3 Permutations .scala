@@ -2,11 +2,21 @@ object Permutations {
   def getPermutations(chars: List[Char]): List[String] = {
     if (chars.isEmpty) List("")
     else {
-      for {
-        i <- chars.indices.toList
-        rest = chars.take(i) ++ chars.drop(i + 1)
-        perm <- getPermutations(rest)
-      } yield chars(i) + perm
+      var result = List[String]()
+      
+      for (i <- 0 until chars.length) {
+        val currentChar = chars(i) 
+        val remainingChars = chars.take(i) ++ chars.drop(i + 1) 
+        
+       
+        val subPermutations = getPermutations(remainingChars)
+
+        
+        for (perm <- subPermutations) {
+          result = result :+ currentChar + perm
+        }
+      }
+      result
     }
   }
 
