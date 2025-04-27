@@ -1,14 +1,18 @@
+
 object PrimeCheck {
   def isPrime(n: Int): Boolean = {
     if (n <= 1) return false
-    for (i <- 2 until n) { 
-      if (n % i == 0) return false 
+    for (i <- 2 until n) {
+      if (n % i == 0) return false
     }
-    true 
+    true
   }
 
   def main(args: Array[String]): Unit = {
-    val number = 29 
+    println("Enter a number to check if it is prime:")
+
+    val number = readInt() // User-லிருந்து number வாங்கறோம்
+
     if (isPrime(number))
       println(s"$number is a prime number.")
     else
